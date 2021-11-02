@@ -1,0 +1,57 @@
+package praktikum;
+
+import java.util.Scanner;
+
+public class flowchart {
+	public static void main (String args[]) {
+		int cara;
+		System.out.println("Basahi kedua tangan");
+		System.out.println("Sabuni tangan");
+		System.out.println("Menggosok tangan");
+		String cara1;
+		Scanner scan1 = new Scanner(System.in);
+		System.out.print("Apakah masih kotor?");
+		cara1 = scan1.nextLine();
+		if (!cara1.trim().equals("Yes")) {
+			System.out.println("Membilas kedua tangan");
+			System.out.println("Mengeringkan tangan");
+			System.out.println("Kedua tangan bersih");
+			System.out.println("Selesai");
+			Scanner scan2 = new Scanner(System.in);{
+				cara1 = scan2.nextLine();
+				if (!cara1.trim().equals("Yes")) {
+					System.out.println("Menggosok tangan");
+					System.out.println("Mengerinkan tangan");
+					System.out.println("End");
+				}
+				else if (!cara1.trim().equals("No")) {
+					System.out.println("Membilas kedua tangan");
+					System.out.println("Mengeringkan tangan");
+					System.out.println("Kedua tangan bersih");
+					System.out.println("Selesai");
+				}
+			}
+		}
+		else if (!cara1.trim().equals("No")){
+			System.out.println("Sabuni tangan");
+			System.out.println("Menggosok tangan");
+			Scanner scan2 = new Scanner(System.in);
+			System.out.println("Apakah masih kotor?");{
+				cara1 = cara1 = scan2.nextLine();
+				if (!cara1.trim().equals("Yes")) {
+					System.out.println("Membilas kedua tangan");
+					System.out.println("Mengeringkan tangan");
+					System.out.println("Kedua tangan bersih");
+					System.out.println("Selesai");
+				}
+				else if (!cara1.trim().equals("No")) {
+					System.out.println("Basahi kedua tangan");
+					System.out.println("Sabuni tangan");
+					
+				}
+				
+			}
+		}
+	}
+}
+	
